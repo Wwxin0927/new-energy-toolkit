@@ -1,2 +1,44 @@
-# new-energy-toolkit
-New energy technical scripts, templates and checklists
+# 新能源技术工具库
+
+本仓库用于沉淀新能源（风电 / 光伏 / 储能）场站技术工作中**可复用**的脚本、模板与资料。
+
+## 仓库定位
+
+| 类别 | 内容 | 说明 |
+|---|---|---|
+| 脚本 | 自研工具脚本 | DWG 图纸解析、录波分析等 |
+| 模板 | 可复用模板 | 预试报价、检修方案等 |
+| 资料 | 整理性资料 | 缺陷速查、资料索引等 |
+
+**范围边界**：只放通用工具与方法论，不含场站涉密技术参数、图纸原件、客户及合同信息。
+
+## Issue 标签体系
+
+| 标签 | 用途 |
+|---|---|
+| `待处理` | 尚未开始 |
+| `处理中` | 正在处理 |
+| `已完成` | 已闭环 |
+| `脚本` | 自研工具脚本 |
+| `模板` | 可复用模板 |
+| `资料` | 技术资料 |
+| `高优先级` | 优先处理 |
+
+## 常用命令
+
+```bash
+# 查看所有开放 Issue
+gh issue list --repo Wwxin0927/new-energy-toolkit --state open
+
+# 按标签筛选
+gh issue list --repo Wwxin0927/new-energy-toolkit --label 脚本
+
+# 查看单条 Issue 详情
+gh issue view <编号> --repo Wwxin0927/new-energy-toolkit
+```
+
+## 维护约定
+
+- 新想法先开 Issue，再动手实现
+- 完成后打上 `已完成` 标签并关闭，记录永久保留
+- 命名规范：`日期_项目_类型_版本`
